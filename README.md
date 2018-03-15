@@ -1,4 +1,5 @@
 # Soms
+This neural network introduced by the Finnish professor Teuvo Kohonen in the 1980s is sometimes called a Kohonen map or network.
 To develop this neural network I follow this tutorials:
 
 https://codesachin.wordpress.com/2015/11/28/self-organizing-maps-with-googles-tensorflow/ 
