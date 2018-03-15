@@ -3,7 +3,10 @@ from matplotlib import pyplot as plt
 # from soms import SOM
 import numpy as np
 import os
-from som import Som
+from model.som import Som
+
+# actual directory
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
 # Training inputs for RGBcolors
 colors = np.array(
@@ -32,14 +35,14 @@ colors_test = np.random.rand(1, 3)
 color_names_test = 'o'
 # directory where save the model
 directory = "model_color"
-
-# do train only if the directory of the model doesn't exist
-if not os.path.exists(directory):
-                os.makedirs(directory)
+directory = os.path.join(dir_path, directory)
 
 # Train a 20x30 SOM with 400 iterations
 som = Som(20, 50, 3, directory, 400)
+
+# do train only if the directory of the model doesn't exist
 if not os.path.exists(directory):
+    os.makedirs(directory)
     # do train
     som.train(colors)
 

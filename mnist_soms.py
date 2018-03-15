@@ -5,14 +5,17 @@ import random as ran
 from tensorflow.examples.tutorials.mnist import input_data
 # Import som class and train into 30 * 30 sized of SOM lattice
 import os
-from som import Som
+from model.som import Som
 
 # download dataset mnist
 mnist = input_data.read_data_sets("data", one_hot=True)
 
+# actual directory
+dir_path = os.path.dirname(os.path.realpath(__file__))
+
 # directory where save the model
 directory = "model_mnist"
-
+directory = os.path.join(dir_path, directory)
 # dim grid and num epoch
 n = 60
 m = 60
@@ -21,6 +24,7 @@ result = None
 
 # choose if do test without train
 if not os.path.exists(directory):
+    os.makedirs(directory)
     test = True
     train = True
 else:
