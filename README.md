@@ -12,11 +12,13 @@ In this example I train the model with two dataset, mnist and color. If you inst
 python main.py
 
 <p align="center">
-  <img src="image/color_image.png" width="350"/>
-  <img src="your_relative_path_here_number_2_large_name" width="350"/>
+  <img src="image/color_image.png" width="250"/>
 </p>
 
 and
 
 python mnist_soms.py
 
+<p align="center">
+  <img src="image/mnist_image.png" width="350"/>
+</p>
