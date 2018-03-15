@@ -8,7 +8,7 @@ https://wonikjang.github.io/deeplearning_unsupervised_som/2017/06/30/som.html/
 
 http://www.ai-junkie.com/ann/som/som1.html 
 
-In this example I train the model with two dataset, mnist and color. If you installed Tensorflow before, you would run two main in python:
+In this example I train the model with two dataset: mnist and color. If you installed Tensorflow before, you would run two main in python:
 
 python main.py
 
