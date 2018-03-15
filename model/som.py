@@ -4,11 +4,6 @@ from tqdm import tqdm
 from datetime import datetime
 import os
 
-
-# https://codesachin.wordpress.com/2015/11/28/self-organizing-maps-with-googles-tensorflow/
-# https://wonikjang.github.io/deeplearning_unsupervised_som/2017/06/30/som.html
-# http://www.ai-junkie.com/ann/som/som1.html
-
 class Som(object):
     # To check if the SOM has been trained
     _trained = False
