@@ -16,8 +16,6 @@ python main.py
   <img src="image/color_image.png" width="250"/>
 </p>
 
-and
-
 python mnist_soms.py
 
 <p align="center">
